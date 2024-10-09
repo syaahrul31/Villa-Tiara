@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gambar{
+    background-image: url('https://wallpapercave.com/wp/wp7111675.jpg');
+}
+
+.tinggi{
+    height:800px;
+}
+
+.atas{
+    margin-top:-80px;
+}
+
+.whatsapp-logo {
+    position: fixed;
+    bottom: 20px; /* Jarak dari bawah */
+    right: 20px; /* Jarak dari kanan */
+    z-index: 1000; /* Agar selalu di atas elemen lainnya */
+}

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Tiara Village</title>
+</head>
+
+<body>
+    <header id="navbar" class="text-white bg-white bg-opacity-0 fixed top-0 left-0 right-0 z-10 transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center py-4 px-10 md:py-5 md:px-5">
+
+            <!-- logo -->
+            <h1 class="text-2xl md:text-3xl font-bold">Villa Tiara</h1>
+
+            <nav>
+                <!-- hamburger -->
+                <button id="menu-toggle" class="md:hidden text-white text-2xl font-bold">☰</button>
+                <!-- navbar (dekstop) -->
+                <ul id="menu" class="hidden md:flex space-x-8 text-lg py-3">
+                    <li><a href="#" class="hover:text-yellow-300">Beranda</a></li>
+                    <li><a href="#" class="hover:text-yellow-300">Tentang</a></li>
+                    <li><a href="#" class="hover:text-yellow-300">Tipe Kamar</a></li>
+                    <li><a href="#" class="hover:text-yellow-300">Testimoni</a></li>
+                    <li><a href="#" class="hover:text-yellow-300">Wisata</a></li>
+                    <li><a href="#" class="hover:text-yellow-300">Kontak</a></li>
+                    <li><a href="#" class="px-4 py-2 bg-black text-white hover:bg-gray-800 rounded-md">Masuk</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Navbar (mobile) -->
+        <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 bg-black bg-opacity-90 text-white transform -translate-x-full transition-transform duration-300 flex flex-col items-start p-5 space-y-6 text-lg z-20">
+            <button id="close-menu" class="text-2xl font-bold self-end focus:outline-none">✖</button>
+            <!-- Menu Items -->
+            <ul class="text-lg pl-5">
+                <li class="py-2"><a href="#" class="hover:text-yellow-300">Beranda</a></li>
+                <li class="py-2"><a href="#" class="hover:text-yellow-300">Tentang</a></li>
+                <li class="py-2"><a href="#" class="hover:text-yellow-300">Tipe Kamar</a></li>
+                <li class="py-2"><a href="#" class="hover:text-yellow-300">Testimoni</a></li>
+                <li class="py-2"><a href="#" class="hover:text-yellow-300">Wisata</a></li>
+                <li class="py-2"><a href="#" class="hover:text-yellow-300">Kontak</a></li>
+                <li class="py-3"><a href="#" class="px-4 py-2 bg-red-500 text-black font-bold rounded-md hover:bg-yellow-500">Masuk</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- =========================================================== -->
+
+    <main>
+
+        <!-- Jumbotron -->
+        <div class="gambar bg-cover bg-center tinggi">
+            <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+                <div class="px-5 text-white text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">Villa Tiara<br>Sarangan</h1>
+                    <p class="text-lg md:text-xl mb-12 max-w-lg mx-auto">Nikmati pengalaman menginap terbaik di Sarangan dengan pemandangan yang memukau.</p>
+                    <a href="#" class="bg-red-600 text-white shadow-md px-4 py-2 md:px-6 md:py-3 rounded-md hover:bg-yellow-600 transition duration-300">Booking Now!</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- =========================================================== -->
+        
+        <!-- highlight section -->
+        <div class="flex flex-col md:flex-row relative justify-center mb-10 atas">
+            <section class="max-w-sm mx-5 bg-white rounded-xl border-2 border-gray-300 p-6 text-center mb-6 md:mb-0">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">LOREM A</h2>
+                <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt nisi architecto excepturi delectus iusto officia veritatis similique deleniti hic!</p>
+                <div class="text-black rounded-sm py-2 border-2 border-gray-400 hover:bg-red-600 hover:text-white transition duration-300">
+                    <a href="#">View More</a>
+                </div>
+            </section>
+        
+            <section class="max-w-sm mx-5 bg-white rounded-xl border-2 border-gray-300 p-6 text-center mb-6 md:mb-0">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">LOREM B</h2>
+                <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt nisi architecto excepturi delectus iusto officia veritatis similique deleniti hic!</p>
+                <div class="text-black rounded-sm py-2 border-2 border-gray-400 hover:bg-red-600 hover:text-white transition duration-300">
+                    <a href="#">View More</a>
+                </div>
+            </section>
+        
+            <section class="max-w-sm mx-5 bg-white rounded-xl border-2 border-gray-300 p-6 text-center mb-0">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">LOREM C</h2>
+                <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt nisi architecto excepturi delectus iusto officia veritatis similique deleniti hic!</p>
+                <div class="text-black rounded-sm py-2 border-2 border-gray-400 hover:bg-red-600 hover:text-white transition duration-300">
+                    <a href="#">View More</a>
+                </div>
+            </section>
+        </div>
+     
+        <!-- =========================================================== -->
+
+        <!-- About me -->
+        <div class="flex flex-row justify-center mb-10">
+            <section class="text-white mx-5 md:mx-10 rounded-xl border-2 border-gray-400 py-10 bg-red-900 flex flex-col md:flex-row items-center justify-center px-12 md:px-12">
+                <section class="w-full md:w-5/6 items-center text-center md:text-left mb-6 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cumque veritatis at quae nam qui neque natus impedit beatae consectetur! Quidem porro architecto voluptatibus numquam dolorum iusto, dolorem illo totam...</p>
+                </section>
+                <div class="w-full md:w-1/6 text-black rounded-lg border-2 border-gray-400 bg-white flex justify-center items-center">
+                    <a href="#" class="text-lg font-semibold py-2">View More</a>
+                </div>
+            </section>
+        </div>        
+
+        <!-- =========================================================== -->
+        
+        <!-- villas -->
+        <div class="flex flex-col md:flex-row items-center md:space-x-10 mb-10">
+            <section class="md:w-1/2 mb-6 md:mb-0">
+                <img class="w-full object-cover shadow-md" src="https://th.bing.com/th/id/OIP.r10Q1rN3mPHqsJvlzP5zPAHaEK?rs=1&pid=ImgDetMain" alt="Tiara Village">
+            </section>
+            <section class="max-w-xl md:w-1/2 flex items-center justify-center">
+                <div class="text-center md:text-left px-4">
+                    <p class="text-lg md:text-xl text-gray-600 mb-4">Lorem ipsum dolor sit amet.</p>
+                    <h1 class="text-3xl md:text-5xl text-black mb-4 font-bold">Villa <span  class="text-red-900">Tiara</span></h1>
+                    <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nulla nisi officia totam ut id itaque quaerat! Optio, neque inventore voluptatem cumque fugit enim ea facere cum tenetur dolorum nam?</p>
+                    <div class="w-full md:w-32 text-black rounded-lg border-2 border-gray-400 bg-white flex justify-center items-center">
+                        <a href="#" class="text-lg font-semibold py-2 text-center">View More</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="bg-gray-100 py-10 md:py-0 flex flex-col md:flex-row items-center md:items-stretch md:space-x-10 mb-10">
+            <section class="min-w-xl md:w-3/6 text-center md:text-left flex items-center justify-center md:justify-start mb-6 md:mb-0 px-4">
+                <div class="md:pl-10">
+                    <p class="text-lg md:text-xl text-gray-600 mb-4">Lorem ipsum dolor sit amet.</p>
+                    <h1 class="text-3xl md:text-5xl text-black mb-4 font-bold">Villa <span  class="text-red-900">Tiara</span></h1>
+                    <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus mollitia enim commodi similique dignissimos omnis repellendus blanditiis, est labore iste pariatur ea incidunt reiciendis consequatur dolore rem voluptates autem perferendis harum soluta, consectetur accusamus. Inventore blanditiis dicta harum, quam sequi, itaque perferendis corporis veniam at tempore illum a dolor? Sit!.</p>
+                    <div class="w-full md:w-32 text-black rounded-lg border-2 border-gray-400 bg-white flex justify-center items-center">
+                        <a href="#" class="text-lg font-semibold py-2 text-center">View More</a>
+                    </div>
+                </div>
+            </section>
+            <section class="md:w-3/6 mb-6 md:mb-0">
+                <img class="w-full object-cover" src="https://wallpaperaccess.com/full/4722330.jpg" alt="Tiara Village">
+            </section>
+        </div>
+
+        <!-- =========================================================== -->
+        
+        <!-- highlight section 2 -->
+        <div class="px-4 md:px-10 justify-center items-center mb-14 md:mb-18 ">
+            <section class="text-center mb-4">
+                <h1 class="text-3xl md:text-5xl">Lorem <span class="font-bold">Ipsum</span></h1>
+                <p class="text-gray-700 text-lg md:text-xl py-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aspernatur obcaecati ipsa nulla rerum sapiente maxime in molestiae voluptatem ex aliquam, maiores distinctio temporibus quaerat.</p>
+            </section>
+            <section class="flex flex-wrap items-center justify-center mb-10">
+                <section class="w-full md:w-1/4 mx-2 mb-4 rounded-xl border-2 border-gray-400 p-8 text-center">
+                    <h2 class="text-xl font-bold mb-4">LOREM A</h2>
+                    <p class="text-gray-700 mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, a!</p>
+                    <div class="text-black rounded-sm py-2 border-2 border-gray-400 hover:bg-red-600 hover:text-white transition duration-300">
+                        <a href="#">View More</a>
+                    </div>
+                </section>
+                <section class="w-full md:w-1/4 mx-2 mb-4 rounded-xl border-2 border-gray-400 p-8 text-center">
+                    <h2 class="text-xl font-bold mb-4">LOREM B</h2>
+                    <p class="text-gray-700 mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, a!</p>
+                    <div class="text-black rounded-sm py-2 border-2 border-gray-400 hover:bg-red-600 hover:text-white transition duration-300">
+                        <a href="#">View More</a>
+                    </div>
+                </section>
+                <section class="w-full md:w-1/4 mx-2 mb-4 rounded-xl border-2 border-gray-400 p-8 text-center">
+                    <h2 class="text-xl font-bold mb-4">LOREM C</h2>
+                    <p class="text-gray-700 mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, a!</p>
+                    <div class="text-black rounded-sm py-2 border-2 border-gray-400 hover:bg-red-600 hover:text-white transition duration-300">
+                        <a href="#">View More</a>
+                    </div>
+                </section>
+                <section class="w-full md:w-1/4 mx-2 mb-4 rounded-xl border-2 border-gray-400 p-8 text-center">
+                    <h2 class="text-xl font-bold mb-4">LOREM D</h2>
+                    <p class="text-gray-700 mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, a!</p>
+                    <div class="text-black rounded-sm py-2 border-2 border-gray-400 hover:bg-red-600 hover:text-white transition duration-300">
+                        <a href="#">View More</a>
+                    </div>
+                </section>
+                <section class="w-full md:w-1/4 mx-2 mb-4 rounded-xl border-2 border-gray-400 p-8 text-center">
+                    <h2 class="text-xl font-bold mb-4">LOREM E</h2>
+                    <p class="text-gray-700 mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, a!</p>
+                    <div class="text-black rounded-sm py-2 border-2 border-gray-400 hover:bg-red-600 hover:text-white transition duration-300">
+                        <a href="#">View More</a>
+                    </div>
+                </section>
+                <section class="w-full md:w-1/4 mx-2 mb-2 rounded-xl border-2 border-gray-400 p-8 text-center">
+                    <h2 class="text-xl font-bold mb-4">LOREM F</h2>
+                    <p class="text-gray-700 mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, a!</p>
+                    <div class="text-black rounded-sm py-2 border-2 border-gray-400 hover:bg-red-600 hover:text-white transition duration-300">
+                        <a href="#">View More</a>
+                    </div>
+                </section>
+            </section>
+            <div class="px-5 text-white text-center">
+                <a href="#" class="bg-red-600 text-white shadow-md px-4 py-2 md:px-6 md:py-3 rounded-md hover:bg-yellow-600 transition duration-300">Selengkapnya</a>
+            </div>
+        </div>
+
+        <!-- =========================================================== -->
+       
+        <!-- slide foto villa -->
+        <div class="bg-red-900 flex flex-col md:flex-row items-center md:space-x-5 py-10 md:py-2 px-6 md:px-16">
+            <section class="w-full md:w-3/6 mb-4 md:mb-0">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <img class="w-full object-cover rounded-lg shadow-md" src="https://th.bing.com/th/id/OIP.Q5PhvQcyfw9nORh1VgHySAHaEo?rs=1&pid=ImgDetMain" alt="Tiara Village">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <img class="w-full object-cover rounded-lg shadow-md" src="https://wallpaperaccess.com/full/1403954.jpg" alt="Villa Tiara">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <img class="w-full object-cover rounded-lg shadow-md" src="https://wallpaperaccess.com/full/2527120.jpg" alt="Beautiful Villa">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+        
+            <section class="w-full md:w-4/6 flex items-center justify-center text-center md:text-left text-white md:p-20">
+                <div>
+                    <p class="text-lg md:text-xl mb-4">Lorem ipsum dolor sit amet.</p>
+                    <h1 class="text-3xl md:text-5xl mb-4 font-bold">Villa Tiara</h1>
+                    <p class="text-lg md:text-xl leading-relaxed mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nulla nisi officia totam ut id itaque quaerat! Optio, neque inventore voluptatem cumque fugit enim ea facere cum tenetur dolorum nam?</p>
+                    <div class="w-full md:w-32 text-black rounded-lg border-2 border-gray-400 bg-white flex justify-center items-center">
+                        <a href="#" class="text-lg font-semibold py-2 text-center">View More</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+
+        <!-- =========================================================== -->
+        
+        <!-- highlight section 3 -->
+        <div class="px-5 md:px-5 justify-center items-center bg-gray-100 py-10 md:py-10">
+            <section class="text-center mb-4">
+                <h1 class="text-3xl md:text-5xl">Lorem <span class="font-bold">Ipsum</span></h1>
+                <p class="text-gray-700 text-xl py-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aspernatur obcaecati ipsa nulla rerum.</p>
+            </section>
+            <section class="flex flex-wrap items-center justify-center mb-10">
+                <section class="bg-white w-full md:w-1/4 rounded-xl border-2 border-gray-300 shadow-md overflow-hidden mb-4 md:mb-6 mx-3">
+                    <img src="https://wallpaperaccess.com/full/4401185.jpg" alt="Product Image" class="w-full object-cover">
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl font-bold mb-2">LOREM A</h2>
+                        <p class="text-gray-700 mb-4 text-lg">$15.00</p>
+                        <div class="rounded-md py-2 px-4 bg-red-500 text-white hover:bg-red-600 transition duration-300">
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-white w-full md:w-1/4 rounded-xl border-2 border-gray-300 shadow-md overflow-hidden mb-4 md:mb-6 mx-3">
+                    <img src="https://wallpaperaccess.com/full/4401185.jpg" alt="Product Image" class="w-full object-cover">
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl font-bold mb-2">LOREM A</h2>
+                        <p class="text-gray-700 mb-4 text-lg">$15.00</p>
+                        <div class="rounded-md py-2 px-4 bg-red-500 text-white hover:bg-red-600 transition duration-300">
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-white w-full md:w-1/4 rounded-xl border-2 border-gray-300 shadow-md overflow-hidden mb-4 md:mb-6 mx-3">
+                    <img src="https://wallpaperaccess.com/full/4401185.jpg" alt="Product Image" class="w-full object-cover">
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl font-bold mb-2">LOREM A</h2>
+                        <p class="text-gray-700 mb-4 text-lg">$15.00</p>
+                        <div class="rounded-md py-2 px-4 bg-red-500 text-white hover:bg-red-600 transition duration-300">
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-white w-full md:w-1/4 rounded-xl border-2 border-gray-300 shadow-md overflow-hidden mb-4 md:mb-6 mx-3">
+                    <img src="https://wallpaperaccess.com/full/4401185.jpg" alt="Product Image" class="w-full object-cover">
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl font-bold mb-2">LOREM A</h2>
+                        <p class="text-gray-700 mb-4 text-lg">$15.00</p>
+                        <div class="rounded-md py-2 px-4 bg-red-500 text-white hover:bg-red-600 transition duration-300">
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-white w-full md:w-1/4 rounded-xl border-2 border-gray-300 shadow-md overflow-hidden mb-4 md:mb-6 mx-3">
+                    <img src="https://wallpaperaccess.com/full/4401185.jpg" alt="Product Image" class="w-full object-cover">
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl font-bold mb-2">LOREM A</h2>
+                        <p class="text-gray-700 mb-4 text-lg">$15.00</p>
+                        <div class="rounded-md py-2 px-4 bg-red-500 text-white hover:bg-red-600 transition duration-300">
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-white w-full md:w-1/4 rounded-xl border-2 border-gray-300 shadow-md overflow-hidden mb-4 md:mb-6 mx-3">
+                    <img src="https://wallpaperaccess.com/full/4401185.jpg" alt="Product Image" class="w-full object-cover">
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl font-bold mb-2">LOREM A</h2>
+                        <p class="text-gray-700 mb-4 text-lg">$15.00</p>
+                        <div class="rounded-md py-2 px-4 bg-red-500 text-white hover:bg-red-600 transition duration-300">
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <div class="px-5 text-white text-center mb-4 md:mb-6">
+                <a href="#" class="bg-red-600 text-white shadow-md px-4 py-2 md:px-6 md:py-3 rounded-md hover:bg-yellow-600 transition duration-300">Selengkapnya</a>
+            </div>
+        </div>
+
+        <!-- =========================================================== -->
+        
+        <!-- Testimoni -->
+        <div class="bg-red-900 flex flex-col md:flex-row items-center md:space-x-5 px-6 md:px-16 mb-10">
+            <section class="md:w-3/6 text-center md:text-left items-center justify-center p-10 md:p-10 text-white">
+                <p class="text-xl">Lorem Ipsum</p>
+                <h1 class="text-6xl my-5"><span class="font-bold">Albert Einstein
+                </h1>
+                <p class="text-xl leading-relaxed mb-6">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur porro culpa nemo quasi inventore magnam hic soluta quisquam possimus nam aliquid vero eaque id?"</p>
+                <div class="w-full md:w-32 text-black rounded-lg border-2 border-gray-400 bg-white flex justify-center items-center">
+                    <a href="#" class="text-lg font-semibold py-2 text-center">View More</a>
+                </div>
+            </section>
+            <section class="md:w-3/6 md:mb-0">
+                <img class="w-full rounded-lg shadow-md" src="https://purepng.com/public/uploads/large/purepng.com-man-face-herofaceshumansfrontalhuman-identityman-1421526885661w7dlt.png" alt="Tiara Village">
+            </section>
+        </div>
+
+        <!-- =========================================================== -->
+        
+        <!-- Gallery -->
+        <div class="px-5 md:px-20 mb-16">
+            <section class="text-center mb-4">
+                <h1 class="text-3xl md:text-5xl font-bold">Gallery</h1>
+                <p class="text-gray-700 text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur obcaecati ipsa nulla rerum.</p>
+            </section>
+        
+            <!-- Grid untuk galeri gambar -->
+            <section class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-16">
+                <img class="w-full h-64 object-cover rounded-lg shadow-md" src="https://freedesignfile.com/upload/2016/10/luxury-houses-with-yellow-light-in-modern-villa-at-night-03-HD-picture.jpg" alt="Villa 1">
+                <img class="w-full h-64 object-cover rounded-lg shadow-md" src="https://freedesignfile.com/upload/2016/10/luxury-houses-with-yellow-light-in-modern-villa-at-night-03-HD-picture.jpg" alt="Villa 2">
+                <img class="w-full h-64 object-cover rounded-lg shadow-md" src="https://freedesignfile.com/upload/2016/10/luxury-houses-with-yellow-light-in-modern-villa-at-night-03-HD-picture.jpg" alt="Villa 3">
+                <img class="w-full h-64 object-cover rounded-lg shadow-md" src="https://freedesignfile.com/upload/2016/10/luxury-houses-with-yellow-light-in-modern-villa-at-night-03-HD-picture.jpg" alt="Villa 4">
+                <img class="w-full h-64 object-cover rounded-lg shadow-md" src="https://freedesignfile.com/upload/2016/10/luxury-houses-with-yellow-light-in-modern-villa-at-night-03-HD-picture.jpg" alt="Villa 5">
+                <img class="w-full h-64 object-cover rounded-lg shadow-md" src="https://freedesignfile.com/upload/2016/10/luxury-houses-with-yellow-light-in-modern-villa-at-night-03-HD-picture.jpg" alt="Villa 6">
+            </section>
+            <div class="px-5 text-white text-center">
+                <a href="#" class="bg-red-600 text-white shadow-md px-4 py-2 md:px-6 md:py-3 rounded-md hover:bg-yellow-600 transition duration-300">Selengkapnya</a>
+            </div>
+        </div>
+
+        <!-- =========================================================== -->
+
+        <!-- Berita -->
+        <div class="px-5 md:px-20 py-16 bg-gray-100 mb-20">
+            <section class="text-center mb-4">
+                <h1 class="text-3xl md:text-5xl font-bold">Berita</h1>
+                <p class="text-gray-700 text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur obcaecati ipsa nulla rerum.</p>
+            </section>
+        
+            <!-- Grid untuk blog posts -->
+            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="https://th.bing.com/th/id/OIP.eJXmC9pNGT3CqtVbtv3kaAHaEm?rs=1&pid=ImgDetMain" alt="Blog 1">
+                    <div class="p-6">
+                        <div class="flex space-x-2 mb-2">
+                            <span class="bg-green-200 text-green-800 text-sm font-semibold px-2 py-1 rounded-full">Blog</span>
+                            <span class="bg-green-200 text-green-800 text-sm font-semibold px-2 py-1 rounded-full">Featured</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Lorem ipsum dolor sit amet consectetur.</h3>
+                        <p class="text-gray-500 text-sm mb-4">Posted on Oktober 12, 2024</p>
+                        <a href="#" class="inline-block bg-green-500 text-white font-semibold px-4 py-2 rounded hover:bg-green-600">Read More</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="https://th.bing.com/th/id/OIP.eJXmC9pNGT3CqtVbtv3kaAHaEm?rs=1&pid=ImgDetMain" alt="Blog 1">
+                    <div class="p-6">
+                        <div class="flex space-x-2 mb-2">
+                            <span class="bg-green-200 text-green-800 text-sm font-semibold px-2 py-1 rounded-full">Blog</span>
+                            <span class="bg-green-200 text-green-800 text-sm font-semibold px-2 py-1 rounded-full">Featured</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Lorem ipsum dolor sit amet consectetur.</h3>
+                        <p class="text-gray-500 text-sm mb-4">Posted on Oktober 12, 2024</p>
+                        <a href="#" class="inline-block bg-green-500 text-white font-semibold px-4 py-2 rounded hover:bg-green-600">Read More</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="https://th.bing.com/th/id/OIP.eJXmC9pNGT3CqtVbtv3kaAHaEm?rs=1&pid=ImgDetMain" alt="Blog 1">
+                    <div class="p-6">
+                        <div class="flex space-x-2 mb-2">
+                            <span class="bg-green-200 text-green-800 text-sm font-semibold px-2 py-1 rounded-full">Blog</span>
+                            <span class="bg-green-200 text-green-800 text-sm font-semibold px-2 py-1 rounded-full">Featured</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Lorem ipsum dolor sit amet consectetur.</h3>
+                        <p class="text-gray-500 text-sm mb-4">Posted on Oktober 12, 2024</p>
+                        <a href="#" class="inline-block bg-green-500 text-white font-semibold px-4 py-2 rounded hover:bg-green-600">Read More</a>
+                    </div>
+                </div>
+            </section>
+            <div class="px-5 text-white text-center">
+                <a href="#" class="bg-red-600 text-white shadow-md px-4 py-2 md:px-6 md:py-3 rounded-md hover:bg-yellow-600 transition duration-300">Selengkapnya</a>
+            </div>
+        </div>
+
+        <!-- =========================================================== -->
+        
+        <!-- Heading FAQ -->
+        <div class="px-5 md:px-20 mb-20">
+            <section class="text-center mb-4">
+                <h1 class="text-3xl md:text-5xl font-bold">Pertanyaan Sering Diajukan</h1>
+                <p class="text-gray-700 text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur obcaecati ipsa nulla rerum.</p> 
+            </section>
+        
+            <!-- FAQ Accordion -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full text-left p-4 font-semibold flex justify-between items-center focus:outline-none" onclick="toggleAccordion(1)">
+                        <span>Siapa Tuhanmu?</span>
+                        <span class="toggle-icon" id="toggle-icon-1">+</span>
+                    </button>
+                    <div class="p-4 hidden" id="faq-content-1">
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nam aspernatur provident praesentium cupiditate rem.</p>
+                    </div>
+                </div>
+        
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full text-left p-4 font-semibold flex justify-between items-center focus:outline-none" onclick="toggleAccordion(2)">
+                        <span>Apa Agamamu?</span>
+                        <span class="toggle-icon" id="toggle-icon-2">+</span>
+                    </button>
+                    <div class="p-4 hidden" id="faq-content-2">
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nam aspernatur provident praesentium cupiditate rem.</p>
+                    </div>
+                </div>
+        
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full text-left p-4 font-semibold flex justify-between items-center focus:outline-none" onclick="toggleAccordion(3)">
+                        <span>Siapa Nabimu?</span>
+                        <span class="toggle-icon" id="toggle-icon-3">-</span>
+                    </button>
+                    <div class="p-4" id="faq-content-3">
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nam aspernatur provident praesentium cupiditate rem.</p>
+                    </div>
+                </div>
+        
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full text-left p-4 font-semibold flex justify-between items-center focus:outline-none" onclick="toggleAccordion(4)">
+                        <span>Dimana kiblatmu?</span>
+                        <span class="toggle-icon" id="toggle-icon-4">+</span>
+                    </button>
+                    <div class="p-4 hidden" id="faq-content-4">
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nam aspernatur provident praesentium cupiditate rem.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- =========================================================== -->
+        
+        <footer class="bg-gray-800 text-white py-10">
+            <div class="container mx-auto px-5 md:px-20">
+        
+                <!-- Map section -->
+                <div class="mb-10">
+                    <h2 class="font-bold text-lg mb-4">Our Location</h2>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.0672071736167!2d111.21916971744382!3d-7.6759242999999895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e798f903e19578f%3A0x963948e3fb35ddef!2sVilla%20Tiara!5e0!3m2!1sid!2sid!4v1728476850917!5m2!1sid!2sid" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+        
+                <!-- Grid column section -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+                    <div>
+                        <h2 class="font-bold text-lg mb-4">About Villa</h2>
+                        <ul>
+                            <li><a href="#" class="hover:underline">About Us</a></li>
+                            <li><a href="#" class="hover:underline">Contact</a></li>
+                            <li><a href="#" class="hover:underline">Products</a></li>
+                            <li><a href="#" class="hover:underline">Services</a></li>
+                            <li><a href="#" class="hover:underline">News</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-lg mb-4">Lorem Ipsum</h2>
+                        <ul>
+                            <li><a href="#" class="hover:underline">About Us</a></li>
+                            <li><a href="#" class="hover:underline">Contact</a></li>
+                            <li><a href="#" class="hover:underline">Products</a></li>
+                            <li><a href="#" class="hover:underline">Services</a></li>
+                            <li><a href="#" class="hover:underline">News</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-lg mb-4">Our Mission</h2>
+                        <p class="mb-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, ullam! Eum dolorem natus, quasi eos eius enim consequatur nam nostrum tenetur, maiores quae totam ex deserunt ducimus ut illum quam.</p>
+                        <a href="#" class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-500 transition duration-300">Read Our Story</a>
+                    </div>
+                </div>
+        
+                <div class="text-center">
+                    <p class="text-sm">&copy; 2024 Villa Tiara, All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>        
+
+        <div class="flex justify-center space-x-4 my-4">
+            <a href="#"><i class="fab fa-tiktok text-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram text-lg"></i></a>
+            <a href="#"><i class="fab fa-twitter text-lg"></i></a>
+            <a href="#"><i class="fab fa-facebook text-lg"></i></a>
+            <a href="#"><i class="fab fa-youtube text-lg"></i></a>
+        </div>        
+    </main>
+
+    <a href="https://wa.me/083127605430" class="whatsapp-logo">
+        <img src="https://static.vecteezy.com/system/resources/previews/021/495/946/original/whatsapp-logo-icon-free-png.png" alt="WhatsApp" class="w-16 h-16">
+    </a>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
