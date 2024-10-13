@@ -23,6 +23,7 @@ closeMenu.addEventListener('click', () => {
 
 // Ambil elemen navbar
 const navbar = document.getElementById('navbar');
+const logo = document.getElementById('logo');
 
 // Fungsi untuk mengubah warna background navbar saat scroll
 window.onscroll = function() {
@@ -31,11 +32,13 @@ window.onscroll = function() {
         navbar.classList.remove('bg-opacity-0', 'text-white');  
         menuToggle.classList.add('text-black');
         navbar.classList.add('bg-opacity-100', 'text-black', 'shadow-lg');
+        logo.classList.add('text-red-700');
     } else {  // Jika di bagian atas
         menuToggle.classList.remove('text-black');
         navbar.classList.remove('bg-opacity-100', 'text-black', 'shadow-lg');
         menuToggle.classList.add('text-white');  
         navbar.classList.add('bg-opacity-0', 'text-white'); 
+        logo.classList.remove('text-red-700');
     }
 };
 

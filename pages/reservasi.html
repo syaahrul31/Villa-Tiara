@@ -21,8 +21,8 @@
             </button>
         </form>
     </div>
-    <div class="md:col-span-2 p-4">
-        <div class="grid grid-cols-10 gap-2 mb-10 mx-auto">
+    <div class="bg-white p-6 rounded-lg shadow-lg md:col-span-2">
+        <div class="grid grid-cols-10 gap-2 mx-auto">
 
             <!-- Lantai 4 -->
             <div class="py-4"><h3 class="font-semibold">LT-4</h3></div>
@@ -133,25 +133,26 @@
             <div class="col-span-3"></div>
         </div>
     </div>
-    <div class="md:col-span-3">
-        <table class="table-auto w-full">
-            <thead>
-                <tr class="bg-gray-200">
-                    <th class="px-4 py-2">Nama</th>
-                    <th class="px-4 py-2">Tanggal Booking</th>
-                    <th class="px-4 py-2">Nomor Kamar</th>
-                    <th class="px-4 py-2">Aksi</th>
-                </tr>
-            </thead>
-            <tbody id="customerTableBody">
-                <!-- Baris customer akan diisi di sini -->
-            </tbody>
-        </table>
-        <button id="clearData" class="mt-4 bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600">
-            Clear Data
-        </button>
-    </div>
 </div>
+<div class="overflow-x-auto bg-white my-6 text-left shadow-lg rounded-lg">
+    <table class="table-auto w-full">
+        <thead>
+            <tr class="bg-orange-700 text-white">
+                <th class="px-4 py-2">No</th>
+                <th class="px-4 py-2">Nama</th>
+                <th class="px-4 py-2">Tanggal Booking</th>
+                <th class="px-4 py-2">Nomor Kamar</th>
+                <th class="px-4 py-2">Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="customerTableBody">
+            <!-- Baris customer akan diisi di sini -->
+        </tbody>
+    </table>
+</div>
+<button id="clearData" class="mt-4 bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600">
+    Clear Data
+</button>
 
 <!-- Font Awesome Icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

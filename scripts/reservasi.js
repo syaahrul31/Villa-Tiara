@@ -16,9 +16,10 @@ function tampilkanDaftarBooking() {
         row.classList.add('bg-white', 'border-b', 'hover:bg-gray-100', 'transition');
 
         row.innerHTML = `
-            <td class="px-6 py-3">${booking.nama}</td>
-            <td class="px-6 py-3">${booking.tanggal}</td>
-            <td class="px-6 py-3">${booking.nomorKamar}</td>
+            <td class="px-4 py-3 text-left">${index + 1}</td>
+            <td class="px-6 py-3 text-left">${booking.nama}</td>
+            <td class="px-6 py-3 text-left">${booking.tanggal}</td>
+            <td class="px-6 py-3 text-left">${booking.nomorKamar}</td>
             <td class="px-6 py-3 flex gap-4">
                 <button onclick="editBooking(${index})" class="text-blue-500 hover:text-blue-700">
                     <i class="fas fa-edit text-xl"></i>
@@ -47,7 +48,7 @@ function updateDenah() {
     let bookings = JSON.parse(localStorage.getItem('bookings')) || [];
     // Reset semua kamar ke status available (hijau)
     document.querySelectorAll('[id^="villa"]').forEach(kamar => {
-        kamar.classList.remove('bg-red-700', 'border-white', 'text-white');
+        kamar.classList.remove('bg-red-700', 'border-none', 'text-white');
         kamar.classList.add('bg-yellow-50', 'border-yellow-500');
     });
     // Update status kamar yang booked
@@ -55,7 +56,7 @@ function updateDenah() {
         const kamarElement = document.getElementById(`villa-${booking.nomorKamar}`);
         if (kamarElement) {
             kamarElement.classList.remove('bg-yellow-50', 'border-yellow-500');
-            kamarElement.classList.add('bg-red-700', 'border-white', 'text-white');
+            kamarElement.classList.add('bg-red-700', 'border-none', 'text-white');
         }
     });
 }
@@ -79,4 +80,12 @@ document.getElementById('bookingForm').addEventListener('submit', function (e) {
 document.addEventListener('DOMContentLoaded', () => {
     updateDenah();
     tampilkanDaftarBooking();
+});
+
+document.getElementById('clearData').addEventListener('click', () => {
+    // Hapus semua data dari localStorage
+    localStorage.removeItem('bookings');
+    // Bersihkan tabel dan update denah
+    tampilkanDaftarBooking();
+    updateDenah();
 });
