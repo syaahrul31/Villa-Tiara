@@ -16,7 +16,12 @@
 
 .whatsapp-logo {
     position: fixed;
-    bottom: 20px; /* Jarak dari bawah */
-    right: 20px; /* Jarak dari kanan */
-    z-index: 1000; /* Agar selalu di atas elemen lainnya */
+    bottom: 50px;
+    right: 50px;
+    z-index: 1000;
+}
+
+#logo{
+    font-family: "Brush Script Std";
+    font-weight:100;
 }
