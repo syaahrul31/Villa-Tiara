@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,42 +9,82 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body class="bg-gray-100">
     <div class="flex">
-        <aside id="sidebar" class="fixed inset-y-0 left-0 w-64 bg-gradient-to-b from-gray-900 to-red-900 text-white h-screen transition-transform transform -translate-x-full md:translate-x-0">
-            <div class="p-6">
-                <h1 class="logo text-3xl font-bold mb-6">Villa Tiara</h1>
-                <nav>
-                    <ul>
-                        <li class="mb-4">
-                            <a href="#" onclick="loadContent('landingpage')" 
-                               class="flex items-center p-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md">
-                                <i class="fas fa-tachometer-alt w-6"></i>
-                                <span class="ml-3">Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" onclick="loadContent('reservasi')" 
-                               class="flex items-center p-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md">
-                                <i class="fas fa-calendar-alt w-6"></i>
-                                <span class="ml-3">Reservasi</span>
-                            </a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="../auth/login.html" 
-                               class="flex items-center p-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md">
-                                <i class="fas fa-sign-out-alt w-6"></i>
-                                <span class="ml-3">Logout</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+        <aside id="sidebar" class="fixed inset-y-0 left-0 w-64 bg-gradient-to-b from-red-700 to-orange-700 text-white h-screen transition-transform transform -translate-x-full md:translate-x-0">
+            <h1 class="logo text-3xl font-bold px-6 mb-4 pt-6">Villa Tiara</h1>
+            <div class="flex items-center p-6 bg-orange-600">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" class="w-10 h-10 rounded-full" alt="Admin">
+                <div class="ml-3">
+                    <p class="text-sm font-bold">ADMIN</p>
+                    <p class="text-xs text-gray-300">Senin, 30 Oktober 2024</p>
+                </div>
             </div>
+            <nav>
+                <ul class="space-y-4 py-5">
+                    <li class="px-6 hover:bg-orange-600">
+                        <a href="#" onclick="loadContent('landingpage')" class="flex items-center px-2 py-2 text-gray-300 hover:text-white rounded-md">
+                            <i class="fas fa-tachometer-alt w-6"></i>
+                            <span class="ml-3">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="px-6 hover:bg-orange-600">
+                        <button class="w-full flex items-center px-2 py-2 text-gray-300hover:text-white rounded-md focus:outline-none" onclick="toggleDropdown('reservasi-menu')">
+                            <i class="fas fa-calendar-alt w-6"></i>
+                            <span class="ml-3">Reservasi</span>
+                            <i class="fas fa-chevron-down ml-auto"></i>
+                        </button>
+                        <ul id="reservasi-menu" class="ml-8 mt-2 hidden space-y-2 pb-3">
+                            <li><a href="#" onclick="loadContent('reservasi')" class="text-gray-300 hover:text-white">Check in</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white">Check out</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white">Sedang di Villa</a></li>
+                        </ul>
+                    </li>
+                    <li class="px-6 hover:bg-orange-600 ">
+                        <button class="w-full flex items-center px-2 py-2 text-gray-300 hover:text-white rounded-md focus:outline-none" onclick="toggleDropdown('kamar-menu')">
+                            <i class="fas fa-bed w-6"></i>
+                            <span class="ml-3">Kamar</span>
+                            <i class="fas fa-chevron-down ml-auto"></i>
+                        </button>
+                        <ul id="kamar-menu" class="ml-8 mt-2 hidden space-y-2 pb-3">
+                            <li><a href="#" class="text-gray-300 hover:text-white">Tipe Kamar</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white">Lihat Kamar</a></li>
+                        </ul>
+                    </li>
+                    <li class="px-6 hover:bg-orange-600">
+                        <button class="w-full flex items-center px-2 py-2 text-gray-300 hover:text-white rounded-md focus:outline-none" onclick="toggleDropdown('bukutamu-menu')">
+                            <i class="fas fa-book w-6"></i>
+                            <span class="ml-3">Buku Tamu</span>
+                            <i class="fas fa-chevron-down ml-auto"></i>
+                        </button>
+                        <ul id="bukutamu-menu" class="ml-8 mt-2 hidden space-y-2 pb-3">
+                            <li><a href="#" class="text-gray-300 hover:text-white">Tambah Tamu</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white">Lihat Tamu</a></li>
+                        </ul>
+                    </li>
+                    <li class="px-6 hover:bg-orange-600">
+                        <button class="w-full flex items-center px-2 py-2 text-gray-300 hover:text-white rounded-md focus:outline-none" onclick="toggleDropdown('laporan-menu')">
+                            <i class="fas fa-file-alt w-6"></i>
+                            <span class="ml-3">Laporan</span>
+                            <i class="fas fa-chevron-down ml-auto"></i>
+                        </button>
+                        <ul id="laporan-menu" class="ml-8 mt-2 hidden space-y-2 pb-3">
+                            <li><a href="#" class="text-gray-300 hover:text-white">Transaksi Kamar</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white">Daftar Tamu</a></li>
+                        </ul>
+                    </li>
+                    <li class="px-6 hover:bg-orange-600">
+                        <a href="../auth/login.html" class="flex items-center px-2 text-gray-300 hover:bg-orange-600 hover:text-white rounded-md py-2">
+                            <i class="fas fa-sign-out-alt w-6"></i>
+                            <span class="ml-3">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </aside>
-    
-        <!-- Hamburger Button -->
-        <nav class="fixed md:hidden p-4 top-0 left-0 right-0 bg-gradient-to-br from-gray-900 to-red-900 flex justify-between items-center z-50">
-            <div class="logo text-white px-4 text-3xl font-bold">Villa Tiara</div>
+        <nav class="fixed md:hidden p-4 top-0 left-0 right-0 bg-gradient-to-br from-red-700 to-orange-700 flex justify-between items-center z-50">
+            <div class="logo text-white px-4 text-2xl font-bold">Villa Tiara</div>
             <button id="menu-toggle" class="text-2xl text-white p-2 rounded-md focus:outline-none">
                 ☰
             </button>
@@ -52,6 +93,8 @@
         <main id="content" class="flex-1 p-6 md:ml-64">
         </main>
     </div>
+
     <script src="../scripts/dashboard.js"></script>
 </body>
+
 </html>

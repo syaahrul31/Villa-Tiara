@@ -1,87 +1,107 @@
 <h2 class="text-2xl font-semibold text-gray-800">Selamat Datang di Dashboard Villa Tiara</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
-        <div class="bg-white p-6 rounded-lg shadow-lg">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+        <div class="bg-white p-6 rounded-xl shadow-lg">
             <div class="flex items-center">
                 <div class="w-16 h-16 bg-yellow-500 text-white flex justify-center items-center rounded-full">
                     <i class="fas fa-bed fa-2x"></i>
                 </div>
                 <div class="ml-4">
-                    <h3 class="text-lg font-medium text-gray-600">Jumlah Kamar</h3>
+                    <h3 class="text-md font-medium text-gray-600">Kamar Tersedia</h3>
                     <p class="text-2xl font-bold text-gray-800">32</p>
                 </div>
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div class="bg-white p-6 rounded-xl shadow-lg">
             <div class="flex items-center">
                 <div class="w-16 h-16 bg-blue-500 text-white flex justify-center items-center rounded-full">
                     <i class="fas fa-calendar-check fa-2x"></i>
                 </div>
                 <div class="ml-4">
-                    <h3 class="text-lg font-medium text-gray-600">Reservasi Hari Ini</h3>
+                    <h3 class="text-md font-medium text-gray-600">Kamar Terpakai</h3>
                     <p class="text-2xl font-bold text-gray-800">12</p>
                 </div>
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div class="bg-white p-6 rounded-xl shadow-lg">
             <div class="flex items-center">
                 <div class="w-16 h-16 bg-green-500 text-white flex justify-center items-center rounded-full">
                     <i class="fas fa-users fa-2x"></i>
                 </div>
                 <div class="ml-4">
-                    <h3 class="text-lg font-medium text-gray-600">Pengguna Terdaftar</h3>
+                    <h3 class="text-md font-medium text-gray-600">Tamu Terdaftar</h3>
                     <p class="text-2xl font-bold text-gray-800">150</p>
                 </div>
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div class="bg-white p-6 rounded-xl shadow-lg">
             <div class="flex items-center">
                 <div class="w-16 h-16 bg-red-500 text-white flex justify-center items-center rounded-full">
                     <i class="fas fa-star fa-2x"></i>
                 </div>
                 <div class="ml-4">
-                    <h3 class="text-lg font-medium text-gray-600">Ulasan</h3>
+                    <h3 class="text-md font-medium text-gray-600">Ulasan</h3>
                     <p class="text-2xl font-bold text-gray-800">120</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="mt-8">
-        <h3 class="text-lg font-semibold text-gray-700 mb-4">Reservasi Terbaru</h3>
-        <div class="overflow-x-auto bg-white shadow-lg rounded-lg">
-            <table class="min-w-full bg-white">
-                <thead>
-                    <tr>
-                        <th class="py-2 px-4 bg-gray-300 text-left text-black">Nama</th>
-                        <th class="py-2 px-4 bg-gray-300 text-left text-black">Tipe Kamar</th>
-                        <th class="py-2 px-4 bg-gray-300 text-left text-black">Tanggal</th>
-                        <th class="py-2 px-4 bg-gray-300 text-left text-black">Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="py-2 px-4 border-b border-gray-200">John Doe</td>
-                        <td class="py-2 px-4 border-b border-gray-200">Deluxe</td>
-                        <td class="py-2 px-4 border-b border-gray-200">11 Okt 2024</td>
-                        <td class="py-2 px-4 border-b border-gray-200 text-green-500">Dikonfirmasi</td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 px-4 border-b border-gray-200">Jane Smith</td>
-                        <td class="py-2 px-4 border-b border-gray-200">Suite</td>
-                        <td class="py-2 px-4 border-b border-gray-200">10 Okt 2024</td>
-                        <td class="py-2 px-4 border-b border-gray-200 text-yellow-500">Menunggu</td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 px-4 border-b border-gray-200">Richard Roe</td>
-                        <td class="py-2 px-4 border-b border-gray-200">Standard</td>
-                        <td class="py-2 px-4 border-b border-gray-200">9 Okt 2024</td>
-                        <td class="py-2 px-4 border-b border-gray-200 text-red-500">Dibatalkan</td>
-                    </tr>
-                </tbody>
-            </table>
+    <div class="mt-8 grid grid-cols-3 gap-6">
+        <div class="col-span-2">
+            <h3 class="font-semibold text-gray-800 mb-4">Reservasi Terbaru</h3>
+            <div class="overflow-x-auto bg-white shadow-lg rounded-xl">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 bg-gray-300 text-left text-black">Nama</th>
+                            <th class="py-2 px-4 bg-gray-300 text-left text-black">Tipe Kamar</th>
+                            <th class="py-2 px-4 bg-gray-300 text-left text-black">Tanggal</th>
+                            <th class="py-2 px-4 bg-gray-300 text-left text-black">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border-b border-gray-200">John Doe</td>
+                            <td class="py-2 px-4 border-b border-gray-200">Deluxe</td>
+                            <td class="py-2 px-4 border-b border-gray-200">11 Okt 2024</td>
+                            <td class="py-2 px-4 border-b border-gray-200 text-green-500">Dikonfirmasi</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b border-gray-200">Jane Smith</td>
+                            <td class="py-2 px-4 border-b border-gray-200">Suite</td>
+                            <td class="py-2 px-4 border-b border-gray-200">10 Okt 2024</td>
+                            <td class="py-2 px-4 border-b border-gray-200 text-yellow-500">Menunggu</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b border-gray-200">Richard Roe</td>
+                            <td class="py-2 px-4 border-b border-gray-200">Standard</td>
+                            <td class="py-2 px-4 border-b border-gray-200">9 Okt 2024</td>
+                            <td class="py-2 px-4 border-b border-gray-200 text-red-500">Dibatalkan</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>       
+        <div class="bg-white-4 col-span-1">
+            <h3 class="font-semibold text-gray-800 mb-4">Pengumuman</h3>
+            <div class="bg-white rounded-xl shadow-lg">
+                <div class="py-4 px-5">
+                    <p class="mb-2">Libur Nasional <span class=" text-white bg-red-500 text-xs px-3 py-1 rounded-2xl mb-5">Penting</span></p>
+                    <p class="text-xs text-gray-500">Oleh: Nama Syahrul - 2022-03-02 00:00</p>
+                </div>
+                <div class="py-4 px-5">
+                    <p class="mb-2">Libur Nasional <span class=" text-white bg-yellow-500 text-xs px-3 py-1 rounded-2xl mb-5">Penting</span></p>
+                    <p class="text-xs text-gray-500">Oleh: Nama Syahrul - 2022-03-02 00:00</p>
+                </div>
+                <div class="py-4 px-5">
+                    <p class="mb-2">Libur Nasional <span class=" text-white bg-red-500 text-xs px-3 py-1 rounded-2xl mb-5">Penting</span></p>
+                    <p class="text-xs text-gray-500">Oleh: Nama Syahrul - 2022-03-02 00:00</p>
+                </div>
+            </div>
+        </div>
+    </div>    
 </body>

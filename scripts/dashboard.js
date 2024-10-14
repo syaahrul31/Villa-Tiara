@@ -45,3 +45,10 @@ document.addEventListener('click', (e) => {
 sidebar.addEventListener('click', (e) => {
     e.stopPropagation(); // Menghentikan event bubbling
 });
+
+
+// Fungsi untuk toggle submenu
+function toggleDropdown(id) {
+    const menu = document.getElementById(id);
+    menu.classList.toggle('hidden');
+}
